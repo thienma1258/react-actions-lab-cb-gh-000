@@ -2,7 +2,7 @@
 
 const React = require('react');
 const sinon = require('sinon');
-const actions = require('../components/actions');
+const actions = require('../actions');
 const Spreadsheet = require('../components/Spreadsheet');
 const Table = require('../components/Table');
 const { shallow } = require('enzyme');

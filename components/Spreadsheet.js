@@ -1,7 +1,7 @@
 'use strict';
 
 const React = require('react');
-const actions = require('./actions');
+const actions = require('../actions');
 const Table = require('./Table');
 
 class Spreadsheet extends React.Component {

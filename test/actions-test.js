@@ -1,7 +1,7 @@
 'use strict';
 
 const sinon = require('sinon');
-const actions = require('../components/actions');
+const actions = require('../actions');
 
 describe('actions', function () {
   describe('#addColumn', function () {
