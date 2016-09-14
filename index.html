@@ -5,6 +5,36 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+    <style>
+      .spreadsheet, .cell input {
+        font-family: Consolas, monaco, monospace;
+      }
+
+      .cell {
+        border: 1px solid #ccc;
+      }
+
+      .table {
+        border-collapse: collapse;
+      }
+
+      .cell input {
+        padding: 0.5em;
+        border: 0;
+      }
+
+      .spreadsheet {
+        padding: 0.5em;
+      }
+
+      .spreadsheet__buttons {
+        margin-bottom: 0.5em;
+      }
+
+      .spreadsheet__focused {
+        margin-top: 0.5em;
+      }
+    </style>
   </head>
   <body>
     <main id="main">
