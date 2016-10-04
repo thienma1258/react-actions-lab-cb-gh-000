@@ -1,10 +1,8 @@
 # React Actions Lab
 
-## Objectives
+## Overview
 
-1. Practice reacting to user input in actions
-2. Explain how actions help modularize applications
-3. Pass components as context for actions
+In this lab, you'll react to user input in action and pass components as context for actions. 
 
 ## React Spreadsheet
 
