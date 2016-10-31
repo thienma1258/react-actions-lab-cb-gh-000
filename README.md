@@ -50,9 +50,11 @@ A table contains one or more `<Row />` components.
 
 ## Actions
 
-Our actions can be found in `components/actions.js`. Each action will be bound in the `<Spreadsheet />` component.
+Our actions can be found in `actions/index.js`. Each action will be bound in the `<Spreadsheet />` component.
 
 ## Resources
 
 [bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 [Partial function application JavaScript](https://passy.svbtle.com/partial-application-in-javascript-using-bind)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-actions-lab'>React Actions Lab</a> on Learn.co and start learning to code for free.</p>
