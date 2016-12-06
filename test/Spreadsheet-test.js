@@ -74,7 +74,7 @@ describe('<Spreadsheet />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.state().focused).toBe(null);
   });
-  
+
   it('should default to table with one row', function () {
     const wrapper = shallow(<Spreadsheet />);
     const rowCount = wrapper.state().table.length;
@@ -124,7 +124,7 @@ describe('<Spreadsheet />', function () {
   it('should display focused cell in format rowIndex — columnIndex if cell is focused', function () {
     const wrapper = shallow(<Spreadsheet />);
     wrapper.setState({ focused: [1, 2] });
-    expect(wrapper.find('.spreadsheet__focused').text()).toBe('1 — 2');
+    expect(wrapper.find('.spreadsheet__focused').text()).toBe('1 - 2');
   });
 
   it('should not display focused cell if no cell is focused', function () {
@@ -137,7 +137,7 @@ describe('<Spreadsheet />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.find(Table).prop('table')).toBe(wrapper.state('table'));
   });
-  
+
   it('should pass bound handleChange handler as onChange to <Table />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.find(Table).prop('onChange')).toBe(wrapper.instance().handleChange);
@@ -147,7 +147,7 @@ describe('<Spreadsheet />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.find(Table).prop('onFocus')).toBe(wrapper.instance().handleFocus);
   });
-  
+
   it('should pass bound handleBlur handler as onBlur to <Table />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.find(Table).prop('onBlur')).toBe(wrapper.instance().handleBlur);
