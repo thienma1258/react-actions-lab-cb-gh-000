@@ -248,7 +248,7 @@ describe('actions', function () {
       sinon.assert.calledOnce(preventDefault);
     });
 
-    it('should remove row from table', function () {
+    it('should remove column from table', function () {
       const setState = sinon.spy();
       const preventDefault = sinon.stub();
 
