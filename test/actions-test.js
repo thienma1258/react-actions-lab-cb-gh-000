@@ -1,7 +1,7 @@
 'use strict';
 
-const sinon = require('sinon');
-const actions = require('../actions');
+import sinon from 'sinon';
+import actions from '../actions';
 
 describe('actions', function () {
   describe('#addColumn', function () {
@@ -37,7 +37,7 @@ describe('actions', function () {
           ['0-0', '0-1', ''],
           ['1-0', '1-1', ''],
           ['2-0', '2-1', '']
-        ] 
+        ]
       });
     });
   });
@@ -121,7 +121,7 @@ describe('actions', function () {
           ['0-0', '0-1'],
           ['1-0', '1-1'],
           ['2-0', 'updated cell']
-        ] 
+        ]
       });
     });
   });
@@ -248,7 +248,7 @@ describe('actions', function () {
       sinon.assert.calledOnce(preventDefault);
     });
 
-    it('should remove row from table', function () {
+    it('should remove column from table', function () {
       const setState = sinon.spy();
       const preventDefault = sinon.stub();
 

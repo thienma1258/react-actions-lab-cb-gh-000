@@ -1,11 +1,11 @@
 'use strict';
 
-const React = require('react');
-const sinon = require('sinon');
-const actions = require('../actions');
-const Spreadsheet = require('../components/Spreadsheet');
-const Table = require('../components/Table');
-const { shallow } = require('enzyme');
+import React from 'react';
+import sinon from 'sinon';
+import actions from '../actions';
+import Spreadsheet from '../components/Spreadsheet';
+import Table from '../components/Table';
+import { shallow } from 'enzyme';
 
 describe('<Spreadsheet />', function () {
   const sandbox = sinon.sandbox.create();
@@ -74,7 +74,7 @@ describe('<Spreadsheet />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.state().focused).toBe(null);
   });
-  
+
   it('should default to table with one row', function () {
     const wrapper = shallow(<Spreadsheet />);
     const rowCount = wrapper.state().table.length;
@@ -124,7 +124,7 @@ describe('<Spreadsheet />', function () {
   it('should display focused cell in format rowIndex — columnIndex if cell is focused', function () {
     const wrapper = shallow(<Spreadsheet />);
     wrapper.setState({ focused: [1, 2] });
-    expect(wrapper.find('.spreadsheet__focused').text()).toBe('1 — 2');
+    expect(wrapper.find('.spreadsheet__focused').text()).toBe('1 — 2' || '1 - 2');
   });
 
   it('should not display focused cell if no cell is focused', function () {
@@ -137,7 +137,7 @@ describe('<Spreadsheet />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.find(Table).prop('table')).toBe(wrapper.state('table'));
   });
-  
+
   it('should pass bound handleChange handler as onChange to <Table />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.find(Table).prop('onChange')).toBe(wrapper.instance().handleChange);
@@ -147,7 +147,7 @@ describe('<Spreadsheet />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.find(Table).prop('onFocus')).toBe(wrapper.instance().handleFocus);
   });
-  
+
   it('should pass bound handleBlur handler as onBlur to <Table />', function () {
     const wrapper = shallow(<Spreadsheet />);
     expect(wrapper.find(Table).prop('onBlur')).toBe(wrapper.instance().handleBlur);

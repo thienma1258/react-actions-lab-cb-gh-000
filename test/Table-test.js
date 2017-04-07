@@ -1,10 +1,10 @@
 'use strict';
 
-const React = require('react');
-const sinon = require('sinon');
-const Table = require('../components/Table');
-const Row = require('../components/Row');
-const { shallow } = require('enzyme');
+import React from 'react';
+import sinon from 'sinon';
+import Table from '../components/Table';
+import Row from '../components/Row';
+import { shallow } from 'enzyme';
 
 describe('<Table />', function () {
   const table = [['0-0'], ['1-0'], ['2-0']];

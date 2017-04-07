@@ -1,9 +1,9 @@
 'use strict';
 
-const React = require('react');
-const Row = require('./Row');
+import React from 'react';
+import Row from './Row';
 
-class Table extends React.Component {
+export default class Table extends React.Component {
   render () {
     return (
       <table className='table' onBlur={this.props.onBlur}>
@@ -23,5 +23,3 @@ class Table extends React.Component {
     );
   }
 }
-
-module.exports = Table;
