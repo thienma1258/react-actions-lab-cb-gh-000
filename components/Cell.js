@@ -1,10 +1,8 @@
 'use strict';
 
-const React = require('react');
+import React from 'react';
 
-class Cell extends React.Component {
+export default class Cell extends React.Component {
   render () {
   }
 }
-
-module.exports = Cell;

@@ -1,11 +1,9 @@
 'use strict';
 
-const React = require('react');
-const Cell = require('./Cell');
+import React from 'react';
+import Cell from './Cell';
 
-class Row extends React.Component {
+export default class Row extends React.Component {
   render () {
   }
 }
-
-module.exports = Row;

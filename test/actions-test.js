@@ -1,7 +1,7 @@
 'use strict';
 
-const sinon = require('sinon');
-const actions = require('../actions');
+import sinon from 'sinon';
+import actions from '../actions';
 
 describe('actions', function () {
   describe('#addColumn', function () {
@@ -37,7 +37,7 @@ describe('actions', function () {
           ['0-0', '0-1', ''],
           ['1-0', '1-1', ''],
           ['2-0', '2-1', '']
-        ] 
+        ]
       });
     });
   });
@@ -121,7 +121,7 @@ describe('actions', function () {
           ['0-0', '0-1'],
           ['1-0', '1-1'],
           ['2-0', 'updated cell']
-        ] 
+        ]
       });
     });
   });

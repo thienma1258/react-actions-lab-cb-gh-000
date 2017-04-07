@@ -1,10 +1,10 @@
 'use strict';
 
-const React = require('react');
-const actions = require('../actions');
-const Table = require('./Table');
+import React from 'react';
+import actions from '../actions';
+import Table from './Table';
 
-class Spreadsheet extends React.Component {
+export default class Spreadsheet extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -34,5 +34,3 @@ class Spreadsheet extends React.Component {
     );
   }
 }
-
-module.exports = Spreadsheet;

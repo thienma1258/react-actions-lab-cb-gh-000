@@ -1,10 +1,10 @@
 'use strict';
 
-const React = require('react');
-const sinon = require('sinon');
-const Row = require('../components/Row');
-const Cell = require('../components/Cell');
-const { shallow } = require('enzyme');
+import React from 'react';
+import sinon from 'sinon';
+import Row from '../components/Row';
+import Cell from '../components/Cell';
+import { shallow } from 'enzyme';
 
 describe('<Row />', function () {
   it('should render <tr />', function () {
