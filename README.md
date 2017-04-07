@@ -12,7 +12,7 @@ This is what we're going to build in this lab:
 
 ![Screenshot](https://s3.amazonaws.com/learn-verified/react-actions-lab-screenshot.png)
 
-Looks complicated? — Don't worry! All our [actions](./components/actions.js) are already there, we just need to implement them!
+Looks complicated? — Don't worry! All our [actions](./actions) are already there, we just need to implement them!
 
 At the end of this lab, our spreadsheet application is going to have the following functionality:
 
