@@ -72,7 +72,7 @@ function removeColumn (ev) {
   }
 }
 
-module.exports = {
+export default {
   addColumn,
   addRow,
   changeCell,
