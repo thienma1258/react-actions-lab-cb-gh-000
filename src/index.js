@@ -5,5 +5,4 @@ import ReactDOM from 'react-dom';
 require('./test/index-test.js'); // Leave this in!
 
 const $main = document.getElementById('main');
-ReactDOM.render(
-return <Spreadsheet />, $main);
+ReactDOM.render(<Spreadsheet />, $main);

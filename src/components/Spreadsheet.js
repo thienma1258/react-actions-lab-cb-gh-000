@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import actions from '../actions';
+import index from '../actions';
 import Table from './Table';
 
 export default class Spreadsheet extends React.Component {
