@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Practice using actions to update React component state",
   "engines": {
-    "node": "6.x",
+    "node": "9.x",
     "npm": "3.x"
   },
   "main": "index.js",
@@ -46,6 +46,8 @@
     "sinon": "^1.17.5"
   },
   "dependencies": {
+    "install": "^0.10.4",
+    "node-pre-gyp": "^0.6.39",
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
   }
