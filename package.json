@@ -2,8 +2,14 @@
   "name": "react-actions-lab",
   "version": "0.1.0",
   "description": "Practice using actions to update React component state",
+  "engines": {
+    "node": "9.x",
+    "npm": "3.x"
+  },
   "main": "index.js",
   "scripts": {
+    "debug": "node-debug --hidden node_modules _mocha --watch",
+    "debug-ide": "./bin/debug-ide",
     "copy-git-hooks": "./bin/copy-hooks",
     "test": "mocha -R mocha-multi --require test/root.js --reporter-options nyan=-,json=.results.json",
     "bundle": "browserify index.js -t babelify --exclude react/addons --exclude react/lib/ExecutionEnvironment --exclude react/lib/ReactContext -o bundle.js",
@@ -35,11 +41,13 @@
     "jsdom": "^9.4.1",
     "mocha": "^3.0.0",
     "mocha-multi": "^0.9.0",
+    "node-inspector": "^0.12.8",
     "react-addons-test-utils": "^15.3.0",
-    "react-test-renderer": "^16.2.0",
     "sinon": "^1.17.5"
   },
   "dependencies": {
+    "install": "^0.10.4",
+    "node-pre-gyp": "^0.6.39",
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
   }
